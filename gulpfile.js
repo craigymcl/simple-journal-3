@@ -38,20 +38,19 @@ gulp.task("watch", done => {
   done();
 });
 
-// Compile Scripts (Simple, No ES6 imports)
-// gulp.task("scripts", done => {
-//   gulp
-//     .src(project.buildSrc + "/assets/scripts/app.js")
-//     .pipe(
-//       babel({
-//         presets: ["@babel/env"]
-//       })
-//     )
-//     .pipe(uglify())
-//     .pipe(gulp.dest(project.buildDest + "/assets/scripts"))
-//     .pipe(connect.reload());
-//   done();
-// });
+gulp.task("scripts", done => {
+  gulp
+    .src(project.buildSrc + "/assets/scripts/*.js")
+    .pipe(
+      babel({
+        presets: ["@babel/env"]
+      })
+    )
+    .pipe(uglify())
+    .pipe(gulp.dest(project.buildDest + "/assets/scripts"))
+    .pipe(connect.reload());
+  done();
+});
 
 // Compile SASS
 gulp.task("stylesheets", done => {
@@ -78,7 +77,7 @@ gulp.task("clean", function() {
 });
 
 // Build task
-gulp.task("build", gulp.parallel("clean", "stylesheets"));
+gulp.task("build", gulp.parallel("clean", "scripts", "stylesheets"));
 
 // Development task
-gulp.task("dev", gulp.parallel("watch", "stylesheets", "server"));
+gulp.task("dev", gulp.parallel("watch", "stylesheets", "scripts", "server"));
