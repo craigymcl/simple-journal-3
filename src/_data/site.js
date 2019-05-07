@@ -12,7 +12,7 @@ module.exports = {
   url: "https://bokehboyzi.es", // Don't end with a slash /
   description: "Just a couple of pals with a couple of cameras",
   copyright: {
-    from: "2019",
+    from: "2018",
     name: "Craig McLachlan and Stewart McKay"
   },
   social_meta: {
