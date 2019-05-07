@@ -13,7 +13,7 @@ module.exports = {
   description: "Just a couple of pals with a couple of cameras",
   copyright: {
     from: "2018",
-    name: "Craig McLachlan and Stewart McKay"
+    name: "Craig McLachlan & Stewart McKay"
   },
   social_meta: {
     // twitter: "@chrisssycollins",
