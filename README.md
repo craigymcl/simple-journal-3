@@ -2,7 +2,7 @@
 
 A simple journal/photo log website built on top of [Blazin'/11ty](https://github.com/chrisssycollins/blazin-eleventy-boilerplate). 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chrisssycollins/simple-journal)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/craigymcl/simple-journal)
 
 ---
 
